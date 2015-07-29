@@ -13,13 +13,13 @@
 
 
 // Title prefixes
-$prefix = ["Assistant", "Vice", "Lead", "Junior", "Chief", "Technical"];
+$prefix = array("Assistant", "Vice", "Lead", "Junior", "Chief", "Technical"); 
 // Major titles
-$major = ["President", "Manager", "Director", "Analyst", "Designer", "Supervisor"];
+$major = array("President", "Manager", "Director", "Analyst", "Designer", "Supervisor");
 // Minor prefixes
-$preminor = ["Special", "Public", "Private", "Personal", "Advanced", "Benefits"];
+$preminor = array("Special", "Public", "Private", "Personal", "Advanced", "Benefits");
 // Minor titles 
-$minor = ["Projects", "Communication", "Development", "Marketing", "Accounting", "Engineering"];
+$minor = array("Projects", "Communication", "Development", "Marketing", "Accounting", "Engineering");
 
 // Randomly select title part elements
 $pick_prefix = rand(0, count($prefix));
