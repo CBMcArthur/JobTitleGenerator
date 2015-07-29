@@ -27,10 +27,15 @@ $pick_major = rand(1, count($major));
 $pick_preminor = rand(0, count($preminor));
 $pick_minor = rand(1, count($minor));
 
-// Display the randomly constructed title
-echo ($pick_prefix == 0 ? "" : $prefix[$pick_prefix-1]." ");
-echo $major[$pick_major-1]." of ";
-echo ($pick_preminor == 0 ? "" : $preminor[$pick_preminor-1]." ");
-echo $minor[$pick_minor-1];
-echo "\n";
+// Assemble the randomly constructed title
+$title  = $pick_prefix == 0 ? "" : $prefix[$pick_prefix-1]." ";
+$title .= $major[$pick_major-1]." of ";
+$title .= $pick_preminor == 0 ? "" : $preminor[$pick_preminor-1]." ";
+$title .= $minor[$pick_minor-1];
+
+// Display the title and a refresh button
+echo "<div>";
+echo "<span style=\"font-weight:bold; font-size:20px; color:blue; margin-left:100px; \">".$title."</span><br />"; 
+echo "<button type=\"submit\"  onClick=\"history.go(0)\" style=\"margin-left: 150px;\">Generate New Job Title</button>";
+echo "</div>";
 ?>
