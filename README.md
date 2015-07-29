@@ -6,6 +6,15 @@ While talking with a friend we got onto a short discussion about creative job ti
 Job titles are generated with four parts:
 `[Prefix] [Major] of [Minor Prefix] [Minor]`
 
-The *Major* and *Minor* parts of of the job title will always be included.  The two prefixes may not always be generated.  Each part of the title is stored within the PHP script as arrays and a random number is generated to select the array element for the job title part.  This initial version of the script includes six elements for each job title part.
+The *Major* and *Minor* parts of of the job title will always be included.  The two prefixes may not always be generated.  Each part of the title is stored within the PHP script as arrays and a random number is generated to select the array element for the job title part.  This initial version of the script includes six elements for each job title part.  The possible elements for each part are:
 
-More information will soon be available on [my personal website](http://www.christian-mcarthur.com).
+major prefix | major part | minor prefix | minor part
+-- | -- | -- | --
+Assistant | President | Special | Projects
+Vice | Manager | Public | Communication 
+Lead | Director | Private | Development 
+Junior | Analyst | Personal | Marketing
+Chief | Designer | Advanced | Accounting 
+Technical | Supervisor | Benefits | Engineering
+
+A small bit of information is available on [my personal website](http://www.christian-mcarthur.com/article/job-title-generator).
