@@ -9,12 +9,12 @@ Job titles are generated with four parts:
 The *Major* and *Minor* parts of of the job title will always be included.  The two prefixes may not always be generated.  Each part of the title is stored within the PHP script as arrays and a random number is generated to select the array element for the job title part.  This initial version of the script includes six elements for each job title part.  The possible elements for each part are:
 
 major prefix | major part | minor prefix | minor part
--- | -- | -- | --
+--- | --- | --- | ---
 Assistant | President | Special | Projects
 Vice | Manager | Public | Communication 
 Lead | Director | Private | Development 
 Junior | Analyst | Personal | Marketing
-Chief | Designer | Advanced | Accounting 
+Chief | Designer | Advanced | Accounting
 Technical | Supervisor | Benefits | Engineering
 
 A small bit of information is available on [my personal website](http://www.christian-mcarthur.com/article/job-title-generator).
